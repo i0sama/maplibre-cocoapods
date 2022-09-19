@@ -9,4 +9,5 @@ s.platform = :ios
 s.source = { :http => 'https://github.com/maptiler/maplibre-gl-native/releases/download/ios-v5.10.0/Mapbox-5.10.0.zip' }
 s.ios.deployment_target = '12.0'
 s.ios.vendored_frameworks = 'Mapbox.xcframework'
+s.dependency "MapboxMobileEvents", "0.10.2"
 end
