@@ -1,19 +1,12 @@
 Pod::Spec.new do |s|
-    version = '5.12.0'
-
-    s.name = 'MapLibre'
-    s.version = version
-    s.license = { :type => 'BSD' }
-    s.homepage = 'https://github.com/maplibre/'
-    s.authors = { 'MapLibre' => '' }
-    s.summary = 'Open source vector map solution for iOS with full styling capabilities.'
-    s.platform = :ios
-    s.source = { 
-        :http => "https://github.com/maptiler/maplibre-gl-native/releases/download/ios-v#{version.to_s}/Mapbox-#{version.to_s}.zip"
-    }
-    s.ios.deployment_target = '12.0'
-
-    s.ios.vendored_frameworks = "Mapbox.xcframework"
-
-    s.dependency "MapboxMobileEvents", "0.10.2"
+s.name = 'MapLibre'
+s.version = '5.12.2'
+s.license = { :type => 'Unspecified' }
+s.homepage = 'https://github.com/maplibre/'
+s.authors = { 'MapLibre' => '' }
+s.summary = 'Open source vector map solution for iOS with full styling capabilities.'
+s.platform = :ios
+s.source = { :http => 'https://github.com/maplibre/maplibre-gl-native/releases/download/ios-v5.12.2/Mapbox-5.12.2.zip' }
+s.ios.deployment_target = '9.0'
+s.ios.vendored_frameworks = 'Mapbox.xcframework'
 end
